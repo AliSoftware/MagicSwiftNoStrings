@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A116CD1C70F4FA00D5D7A2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */; };
+		09A116D21C70FC0900D5D7A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A116D41C70FC0900D5D7A2 /* Localizable.strings */; };
+		09A116D81C70FD5600D5D7A2 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A116D71C70FD5600D5D7A2 /* ImagesViewController.swift */; };
+		09A116DA1C70FD7500D5D7A2 /* ImagesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A116D91C70FD7500D5D7A2 /* ImagesViewController.storyboard */; };
+		09A116DC1C7103AE00D5D7A2 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A116DB1C7103AE00D5D7A2 /* HomeViewController.storyboard */; };
 		09B15B7A1C70D1C100A1E31C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B791C70D1C100A1E31C /* AppDelegate.swift */; };
-		09B15B7C1C70D1C100A1E31C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B7B1C70D1C100A1E31C /* ViewController.swift */; };
-		09B15B7F1C70D1C100A1E31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B15B7D1C70D1C100A1E31C /* Main.storyboard */; };
+		09B15B7C1C70D1C100A1E31C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B7B1C70D1C100A1E31C /* HomeViewController.swift */; };
 		09B15B811C70D1C100A1E31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B15B801C70D1C100A1E31C /* Assets.xcassets */; };
 		09B15B841C70D1C100A1E31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B15B821C70D1C100A1E31C /* LaunchScreen.storyboard */; };
+		09B15B8D1C70DF3C00A1E31C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B8C1C70DF3C00A1E31C /* Images.swift */; };
+		09B15B8F1C70DF5100A1E31C /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B8E1C70DF5100A1E31C /* Storyboards.swift */; };
+		09B15B911C70DF5D00A1E31C /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B901C70DF5D00A1E31C /* Routes.swift */; };
+		09B15B931C70DF6900A1E31C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B921C70DF6900A1E31C /* Strings.swift */; };
+		09B15B951C70DF8900A1E31C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B941C70DF8900A1E31C /* Reusable.swift */; };
+		7FD9BE1DF8B16AA46370A0B3 /* Pods_iOSPerth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF356AEA3321E0CFA3E42456 /* Pods_iOSPerth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		09A116D31C70FC0900D5D7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A116D61C70FC7100D5D7A2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09A116D71C70FD5600D5D7A2 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		09A116D91C70FD7500D5D7A2 /* ImagesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImagesViewController.storyboard; sourceTree = "<group>"; };
+		09A116DB1C7103AE00D5D7A2 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		09B15B761C70D1C100A1E31C /* iOSPerth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPerth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B15B791C70D1C100A1E31C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09B15B7B1C70D1C100A1E31C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09B15B7E1C70D1C100A1E31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09B15B7B1C70D1C100A1E31C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		09B15B801C70D1C100A1E31C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09B15B831C70D1C100A1E31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09B15B851C70D1C100A1E31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B15B8C1C70DF3C00A1E31C /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		09B15B8E1C70DF5100A1E31C /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		09B15B901C70DF5D00A1E31C /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		09B15B921C70DF6900A1E31C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		09B15B941C70DF8900A1E31C /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		50A6B423B18C4D0F4FDCA1FC /* Pods-iOSPerth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPerth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth.debug.xcconfig"; sourceTree = "<group>"; };
+		BF356AEA3321E0CFA3E42456 /* Pods_iOSPerth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPerth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CA6728C0502B416A19220 /* Pods-iOSPerth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPerth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +52,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD9BE1DF8B16AA46370A0B3 /* Pods_iOSPerth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A116CE1C70F8BB00D5D7A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				09A116DB1C7103AE00D5D7A2 /* HomeViewController.storyboard */,
+				09B15B7B1C70D1C100A1E31C /* HomeViewController.swift */,
+				09A116D91C70FD7500D5D7A2 /* ImagesViewController.storyboard */,
+				09A116D71C70FD5600D5D7A2 /* ImagesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		09A116CF1C70FBED00D5D7A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09B15B801C70D1C100A1E31C /* Assets.xcassets */,
+				09B15B821C70D1C100A1E31C /* LaunchScreen.storyboard */,
+				09B15B851C70D1C100A1E31C /* Info.plist */,
+				09A116D41C70FC0900D5D7A2 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		09B15B6D1C70D1C100A1E31C = {
 			isa = PBXGroup;
 			children = (
 				09B15B781C70D1C100A1E31C /* iOSPerth */,
 				09B15B771C70D1C100A1E31C /* Products */,
+				16F04B119696BD0C9F4900DC /* Pods */,
+				941917C2EC6C4A78984B6050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +103,49 @@
 			isa = PBXGroup;
 			children = (
 				09B15B791C70D1C100A1E31C /* AppDelegate.swift */,
-				09B15B7B1C70D1C100A1E31C /* ViewController.swift */,
-				09B15B7D1C70D1C100A1E31C /* Main.storyboard */,
-				09B15B801C70D1C100A1E31C /* Assets.xcassets */,
-				09B15B821C70D1C100A1E31C /* LaunchScreen.storyboard */,
-				09B15B851C70D1C100A1E31C /* Info.plist */,
+				09B15B8B1C70DF2200A1E31C /* Constants */,
+				09B15B961C70DF9500A1E31C /* Protocols */,
+				09A116CE1C70F8BB00D5D7A2 /* ViewControllers */,
+				09A116CF1C70FBED00D5D7A2 /* Resources */,
 			);
 			path = iOSPerth;
+			sourceTree = "<group>";
+		};
+		09B15B8B1C70DF2200A1E31C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				09B15B8C1C70DF3C00A1E31C /* Images.swift */,
+				09B15B921C70DF6900A1E31C /* Strings.swift */,
+				09B15B901C70DF5D00A1E31C /* Routes.swift */,
+				09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		09B15B961C70DF9500A1E31C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09B15B8E1C70DF5100A1E31C /* Storyboards.swift */,
+				09B15B941C70DF8900A1E31C /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		16F04B119696BD0C9F4900DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50A6B423B18C4D0F4FDCA1FC /* Pods-iOSPerth.debug.xcconfig */,
+				FF0CA6728C0502B416A19220 /* Pods-iOSPerth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		941917C2EC6C4A78984B6050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF356AEA3321E0CFA3E42456 /* Pods_iOSPerth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "iOSPerth" */;
 			buildPhases = (
+				5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */,
 				09B15B721C70D1C100A1E31C /* Sources */,
 				09B15B731C70D1C100A1E31C /* Frameworks */,
 				09B15B741C70D1C100A1E31C /* Resources */,
+				926E3531BFD3340C5DFA22C9 /* Embed Pods Frameworks */,
+				153CCD1695DD20AA788C5746 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +193,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 09B15B6D1C70D1C100A1E31C;
 			productRefGroup = 09B15B771C70D1C100A1E31C /* Products */;
@@ -122,33 +210,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A116DC1C7103AE00D5D7A2 /* HomeViewController.storyboard in Resources */,
 				09B15B841C70D1C100A1E31C /* LaunchScreen.storyboard in Resources */,
+				09A116D21C70FC0900D5D7A2 /* Localizable.strings in Resources */,
+				09A116DA1C70FD7500D5D7A2 /* ImagesViewController.storyboard in Resources */,
 				09B15B811C70D1C100A1E31C /* Assets.xcassets in Resources */,
-				09B15B7F1C70D1C100A1E31C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		153CCD1695DD20AA788C5746 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		926E3531BFD3340C5DFA22C9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09B15B721C70D1C100A1E31C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B15B7C1C70D1C100A1E31C /* ViewController.swift in Sources */,
+				09A116D81C70FD5600D5D7A2 /* ImagesViewController.swift in Sources */,
+				09A116CD1C70F4FA00D5D7A2 /* Fonts.swift in Sources */,
+				09B15B8F1C70DF5100A1E31C /* Storyboards.swift in Sources */,
+				09B15B7C1C70D1C100A1E31C /* HomeViewController.swift in Sources */,
+				09B15B911C70DF5D00A1E31C /* Routes.swift in Sources */,
+				09B15B8D1C70DF3C00A1E31C /* Images.swift in Sources */,
+				09B15B931C70DF6900A1E31C /* Strings.swift in Sources */,
 				09B15B7A1C70D1C100A1E31C /* AppDelegate.swift in Sources */,
+				09B15B951C70DF8900A1E31C /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		09B15B7D1C70D1C100A1E31C /* Main.storyboard */ = {
+		09A116D41C70FC0900D5D7A2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				09B15B7E1C70D1C100A1E31C /* Base */,
+				09A116D31C70FC0900D5D7A2 /* Base */,
+				09A116D61C70FC7100D5D7A2 /* fr */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		09B15B821C70D1C100A1E31C /* LaunchScreen.storyboard */ = {
@@ -247,6 +393,7 @@
 		};
 		09B15B891C70D1C100A1E31C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A6B423B18C4D0F4FDCA1FC /* Pods-iOSPerth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSPerth/Info.plist;
@@ -258,6 +405,7 @@
 		};
 		09B15B8A1C70D1C100A1E31C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0CA6728C0502B416A19220 /* Pods-iOSPerth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSPerth/Info.plist;
@@ -286,6 +434,7 @@
 				09B15B8A1C70D1C100A1E31C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
