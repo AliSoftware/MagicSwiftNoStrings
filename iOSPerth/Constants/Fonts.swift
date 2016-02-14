@@ -13,23 +13,3 @@ struct AppFonts {
   static let Body = UIFont.systemFontOfSize(14)
   static let Footnote = UIFont.italicSystemFontOfSize(10)
 }
-
-enum Environment: String {
-  case Prod = "http://api.myapp.org"
-  case Dev = "http://dev.api.myapp.org"
-
-  var baseURL: NSURL {
-    return NSURL(string: self.rawValue)!
-  }
-
-  func url(path: String) -> NSURL {
-    return NSURL(string: path, relativeToURL: self.baseURL)!
-  }
-}
-
-
-func foo() {
-  let label = UILabel()
-
-  label.font = AppFonts.Title
-}

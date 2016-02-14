@@ -11,6 +11,7 @@ import Foundation
 enum L10n {
   case AppTitle
   case OK
+  case Close
   case Greetings(String)
 }
 
@@ -22,6 +23,8 @@ extension L10n: CustomStringConvertible {
       return tr("AppTitle")
     case OK:
       return tr("OK")
+    case Close:
+      return tr("Close")
     case Greetings(let p0):
       return tr("Greetings", p0)
     }

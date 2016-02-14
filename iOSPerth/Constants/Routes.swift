@@ -29,7 +29,7 @@ extension Route {
 
 
 extension Route {
-  static var baseURL: NSURL?
+  static var baseURL: NSURL? = currentEnvironment.baseURL
   static var session = NSURLSession.sharedSession()
 
   var request: NSURLRequest {
@@ -40,6 +40,15 @@ extension Route {
   enum Response {
     case Success(data: NSData, response: NSHTTPURLResponse)
     case Error(ErrorType)
+
+    func json() throws -> AnyObject {
+      switch self {
+      case .Success(let data, _):
+        return try NSJSONSerialization.JSONObjectWithData(data, options: [])
+      case .Error(let error):
+        throw error
+      }
+    }
   }
 
   func fetch(completion: Response -> Void) {
@@ -50,7 +59,7 @@ extension Route {
       guard let data = data, response = response as? NSHTTPURLResponse else {
         return completion(Response.Error(NSURLError.BadServerResponse))
       }
-      completion(Response.Success(data: data, response: response))
+      return completion(Response.Success(data: data, response: response))
     }.resume()
   }
 }

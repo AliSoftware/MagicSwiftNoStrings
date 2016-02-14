@@ -27,8 +27,16 @@
                                     <action selector="waveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kke-Qh-0Bh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACK-et-jey">
+                                <rect key="frame" x="364" y="302" width="72" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <state key="normal" title="🌐"/>
+                                <connections>
+                                    <action selector="networkAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDO-uf-xsP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-dv-opK">
-                                <rect key="frame" x="264.5" y="302" width="72" height="98"/>
+                                <rect key="frame" x="164" y="302" width="72" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <state key="normal" title="🖼"/>
                                 <connections>
@@ -38,9 +46,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="J8i-dv-opK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5kl-4H-iWj"/>
+                            <constraint firstItem="J8i-dv-opK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="2/3" id="5kl-4H-iWj"/>
+                            <constraint firstItem="ACK-et-jey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="4/3" id="DSH-jX-jzf"/>
                             <constraint firstItem="yye-Jn-qBu" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" multiplier="1/3" id="KSY-R8-nCb"/>
                             <constraint firstItem="J8i-dv-opK" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" multiplier="2/3" id="pbb-A1-DP3"/>
+                            <constraint firstItem="ACK-et-jey" firstAttribute="centerY" secondItem="J8i-dv-opK" secondAttribute="centerY" id="rfX-yT-Ulg"/>
                             <constraint firstItem="yye-Jn-qBu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u8x-iH-9TZ"/>
                         </constraints>
                     </view>
