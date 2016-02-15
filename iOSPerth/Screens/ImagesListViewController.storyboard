@@ -22,18 +22,27 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TPp-0l-Ecb">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="299.5"/>
+                                            <rect key="frame" x="0.0" y="36.5" width="600" height="263"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhZ-Dd-Vxm">
+                                            <rect key="frame" x="279" y="8" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="TPp-0l-Ecb" secondAttribute="trailing" id="4ir-1e-hYR"/>
-                                        <constraint firstItem="TPp-0l-Ecb" firstAttribute="top" secondItem="sTU-so-Qyg" secondAttribute="top" id="PFK-Zz-HHp"/>
+                                        <constraint firstItem="ZhZ-Dd-Vxm" firstAttribute="centerX" secondItem="sTU-so-Qyg" secondAttribute="centerX" id="JcJ-UI-Yi9"/>
+                                        <constraint firstItem="TPp-0l-Ecb" firstAttribute="top" secondItem="ZhZ-Dd-Vxm" secondAttribute="bottom" constant="8" id="WO8-Jn-BcA"/>
+                                        <constraint firstItem="ZhZ-Dd-Vxm" firstAttribute="top" secondItem="sTU-so-Qyg" secondAttribute="top" constant="8" id="YOP-P0-pq8"/>
                                         <constraint firstItem="TPp-0l-Ecb" firstAttribute="leading" secondItem="sTU-so-Qyg" secondAttribute="leading" id="rBf-H9-fbz"/>
                                         <constraint firstAttribute="bottom" secondItem="TPp-0l-Ecb" secondAttribute="bottom" id="utH-wI-7yd"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="pictureView" destination="TPp-0l-Ecb" id="md1-cs-JOE"/>
+                                    <outlet property="titleLabel" destination="ZhZ-Dd-Vxm" id="5KL-AM-6pb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -45,7 +54,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkX-2f-jVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="508" y="376"/>
+            <point key="canvasLocation" x="334" y="-6"/>
         </scene>
     </scenes>
 </document>

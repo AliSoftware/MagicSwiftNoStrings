@@ -15,6 +15,7 @@
 		09A116E21C71123F00D5D7A2 /* ImagesListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A116E11C71123F00D5D7A2 /* ImagesListViewController.storyboard */; };
 		09A116E41C71132B00D5D7A2 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A116E31C71132B00D5D7A2 /* ImageCell.swift */; };
 		09A116E61C71150600D5D7A2 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A116E51C71150600D5D7A2 /* Stubs.swift */; };
+		09A116E81C728DBB00D5D7A2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A116E71C728DBB00D5D7A2 /* Colors.swift */; };
 		09B15B7A1C70D1C100A1E31C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B791C70D1C100A1E31C /* AppDelegate.swift */; };
 		09B15B7C1C70D1C100A1E31C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B7B1C70D1C100A1E31C /* HomeViewController.swift */; };
 		09B15B811C70D1C100A1E31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B15B801C70D1C100A1E31C /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		09A116E11C71123F00D5D7A2 /* ImagesListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImagesListViewController.storyboard; sourceTree = "<group>"; };
 		09A116E31C71132B00D5D7A2 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		09A116E51C71150600D5D7A2 /* Stubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		09A116E71C728DBB00D5D7A2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		09B15B761C70D1C100A1E31C /* iOSPerth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPerth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B15B791C70D1C100A1E31C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B15B7B1C70D1C100A1E31C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				09B15B8C1C70DF3C00A1E31C /* Images.swift */,
+				09A116E71C728DBB00D5D7A2 /* Colors.swift */,
 				09B15B921C70DF6900A1E31C /* Strings.swift */,
 				09A116DD1C71103B00D5D7A2 /* Environment.swift */,
 				09B15B901C70DF5D00A1E31C /* Routes.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A116E01C71122F00D5D7A2 /* ImagesListViewController.swift in Sources */,
+				09A116E81C728DBB00D5D7A2 /* Colors.swift in Sources */,
 				09A116CD1C70F4FA00D5D7A2 /* Fonts.swift in Sources */,
 				09A116E41C71132B00D5D7A2 /* ImageCell.swift in Sources */,
 				09B15B8F1C70DF5100A1E31C /* Storyboards.swift in Sources */,

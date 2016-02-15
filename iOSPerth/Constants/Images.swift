@@ -10,8 +10,12 @@ import UIKit
 
 enum Asset: String {
   case Apple
-  case Pear
   case Banana
+  case Watermelon
+
+  var image: UIImage! {
+    return UIImage(named: self.rawValue)
+  }
 }
 
 extension UIImage {
