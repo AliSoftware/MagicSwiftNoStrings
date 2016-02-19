@@ -10,7 +10,7 @@ import UIKit
 import Reusable
 
 final class ImagesListViewController: UITableViewController, StoryboardBased {
-  let images: [Asset] = [.Apple, .Banana, .Pear]
+  let images: [Asset] = [.Apple, .Banana, .Watermelon]
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,7 +18,7 @@ final class ImagesListViewController: UITableViewController, StoryboardBased {
     self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: L10n.Close.string, style: .Plain, target: self, action: Selector("close:"))
   }
 
-  @objc private func close(_: AnyObject) {
+  @IBAction private func close(_: AnyObject) {
     self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
 

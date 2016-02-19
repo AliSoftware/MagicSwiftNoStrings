@@ -122,12 +122,12 @@
 		09B15B8B1C70DF2200A1E31C /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */,
 				09B15B8C1C70DF3C00A1E31C /* Images.swift */,
 				09A116E71C728DBB00D5D7A2 /* Colors.swift */,
 				09B15B921C70DF6900A1E31C /* Strings.swift */,
 				09A116DD1C71103B00D5D7A2 /* Environment.swift */,
 				09B15B901C70DF5D00A1E31C /* Routes.swift */,
-				09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
