@@ -19,13 +19,13 @@ extension L10n: CustomStringConvertible {
 
   var string: String {
     switch self {
-    case AppTitle:
+    case .AppTitle:
       return tr("AppTitle")
-    case OK:
+    case .OK:
       return tr("OK")
-    case Close:
+    case .Close:
       return tr("Close")
-    case Greetings(let p0):
+    case .Greetings(let p0):
       return tr("Greetings", p0)
     }
   }
@@ -45,3 +45,7 @@ extension String {
     self.init(l10n.description)
   }
 }
+
+//func bar(){
+//  print(L10n.Greetings("iOS Perth"))
+//}

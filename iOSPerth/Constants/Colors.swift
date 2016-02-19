@@ -33,3 +33,6 @@ extension UIColor {
     self.init(CGColor: color.color.CGColor)
   }
 }
+
+// let redColor: UIColor = AppColor.Red.color
+// let blueColor: UIColor = UIColor(color: .Blue)

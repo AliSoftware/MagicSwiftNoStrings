@@ -23,3 +23,6 @@ extension UIImage {
     self.init(named: asset.rawValue)!
   }
 }
+
+// let bananaImage: UIImage = Asset.Banana.image
+// let appleImage: UIImage = UIImage(asset: .Apple)

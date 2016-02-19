@@ -63,3 +63,11 @@ extension Route {
     }.resume()
   }
 }
+
+// Route.UserInfo(userID: 42).fetch { response in
+//   do {
+//     let json = try response.json()
+//   } catch {
+//     print("error: \(error)")
+//   }
+// }

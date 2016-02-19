@@ -13,3 +13,6 @@ struct AppFonts {
   static let Body = UIFont.systemFontOfSize(14)
   static let Footnote = UIFont.italicSystemFontOfSize(10)
 }
+
+
+// label.font = AppFonts.Title
