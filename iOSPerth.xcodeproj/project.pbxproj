@@ -164,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "iOSPerth" */;
 			buildPhases = (
+				4711AD7F1C7777A8006BF102 /* > SwiftGen */,
 				5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */,
 				09B15B721C70D1C100A1E31C /* Sources */,
 				09B15B731C70D1C100A1E31C /* Frameworks */,
@@ -243,6 +244,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4711AD7F1C7777A8006BF102 /* > SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "> SwiftGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen images \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Images.swift\"\n  swiftgen strings \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Strings.swift\"\n  # swiftgen images \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Images.swift\"\n  # swiftgen storyboards \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Storyboards.swift\"\nelse\n  echo \"SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
 			showEnvVarsInLog = 0;
 		};
 		5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */ = {
