@@ -1,38 +1,48 @@
-//
-//  Colors.swift
-//  iOSPerth
-//
-//  Created by Olivier Halligon on 15/02/2016.
-//  Copyright © 2016 AliSoftware. All rights reserved.
-//
+// Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
 
 import UIKit
 
-enum AppColor: UInt32 {
-  /** <div style='background: #888888; width: 40px; height: 20px; border: 1px solid black'></div> #888888 */
-  case Gray = 0x888888FF
-  /** <div style='background: #3366CC; width: 40px; height: 20px; border: 1px solid black'></div> #3366CC */
-  case Blue = 0x3366CCFF
-  /** <div style='background: #C93342; width: 40px; height: 20px; border: 1px solid black'></div> #C93342 */
-  case Red  = 0xC93342FF
-  /** <div style='background: #FFFFFF; width: 40px; height: 20px; border: 1px solid black'></div> #FFFFFF (50%) */
-  case Translucent = 0xFFFFFF80
+extension UIColor {
+  convenience init(rgbaValue: UInt32) {
+    let red   = CGFloat((rgbaValue >> 24) & 0xff) / 255.0
+    let green = CGFloat((rgbaValue >> 16) & 0xff) / 255.0
+    let blue  = CGFloat((rgbaValue >>  8) & 0xff) / 255.0
+    let alpha = CGFloat((rgbaValue      ) & 0xff) / 255.0
 
-  var color: UIColor {
-    return UIColor(
-      red:   CGFloat((self.rawValue >> 24) & 0xFF) / 255,
-      green: CGFloat((self.rawValue >> 16) & 0xFF) / 255,
-      blue:  CGFloat((self.rawValue >>  8) & 0xFF) / 255,
-      alpha: CGFloat( self.rawValue        & 0xFF) / 255
-    )
+    self.init(red: red, green: green, blue: blue, alpha: alpha)
   }
 }
 
 extension UIColor {
-  convenience init(color: AppColor) {
-    self.init(CGColor: color.color.CGColor)
+  enum AppColor {
+    /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#3366cc"></span>
+    /// Alpha: 100% <br/> (0x3366ccff)
+    case Blue
+    /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#888888"></span>
+    /// Alpha: 100% <br/> (0x888888ff)
+    case Gray
+    /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#c93342"></span>
+    /// Alpha: 100% <br/> (0xc93342ff)
+    case Red
+    /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffffff"></span>
+    /// Alpha: 50% <br/> (0xffffff80)
+    case Translucent
+
+    var rgbaValue: UInt32! {
+      switch self {
+      case .Blue: return 0x3366ccff
+      case .Gray: return 0x888888ff
+      case .Red: return 0xc93342ff
+      case .Translucent: return 0xffffff80
+      }
+    }
+
+    var color: UIColor {
+      return UIColor(named: self)
+    }
+  }
+
+  convenience init(named name: AppColor) {
+    self.init(rgbaValue: name.rgbaValue)
   }
 }
-
-// let redColor: UIColor = AppColor.Red.color
-// let blueColor: UIColor = UIColor(color: .Blue)

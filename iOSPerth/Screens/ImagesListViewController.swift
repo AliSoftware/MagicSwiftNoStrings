@@ -10,7 +10,7 @@ import UIKit
 import Reusable
 
 final class ImagesListViewController: UITableViewController, StoryboardBased {
-  let images: [Asset] = [.Apple, .Banana, .Watermelon]
+  let images: [UIImage.Asset] = [.Apple, .Banana, .Watermelon]
 
   override func viewDidLoad() {
     super.viewDidLoad()
