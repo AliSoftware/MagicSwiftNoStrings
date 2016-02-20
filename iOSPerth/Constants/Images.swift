@@ -1,28 +1,19 @@
-//
-//  Images.swift
-//  iOSPerth
-//
-//  Created by Olivier Halligon on 14/02/2016.
-//  Copyright © 2016 AliSoftware. All rights reserved.
-//
+// Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
 
 import UIKit
 
-enum Asset: String {
-  case Apple
-  case Banana
-  case Watermelon
-
-  var image: UIImage! {
-    return UIImage(named: self.rawValue)
-  }
-}
-
 extension UIImage {
+  enum Asset: String {
+    case Apple = "Apple"
+    case Banana = "Banana"
+    case Watermelon = "Watermelon"
+
+    var image: UIImage {
+      return UIImage(asset: self)
+    }
+  }
+
   convenience init!(asset: Asset) {
-    self.init(named: asset.rawValue)!
+    self.init(named: asset.rawValue)
   }
 }
-
-// let bananaImage: UIImage = Asset.Banana.image
-// let appleImage: UIImage = UIImage(asset: .Apple)

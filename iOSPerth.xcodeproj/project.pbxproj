@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		097504251C78E6C700D1A01B /* colors.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
 		09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		09A116D31C70FC0900D5D7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09A116D61C70FC7100D5D7A2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 			children = (
 				09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */,
 				09B15B8C1C70DF3C00A1E31C /* Images.swift */,
+				097504251C78E6C700D1A01B /* colors.xml */,
 				09A116E71C728DBB00D5D7A2 /* Colors.swift */,
 				09B15B921C70DF6900A1E31C /* Strings.swift */,
 				09A116DD1C71103B00D5D7A2 /* Environment.swift */,
@@ -164,7 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "iOSPerth" */;
 			buildPhases = (
-				4711AD7F1C7777A8006BF102 /* > SwiftGen */,
+				4711AD7F1C7777A8006BF102 /* 🛠 SwiftGen */,
 				5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */,
 				09B15B721C70D1C100A1E31C /* Sources */,
 				09B15B731C70D1C100A1E31C /* Frameworks */,
@@ -246,19 +248,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4711AD7F1C7777A8006BF102 /* > SwiftGen */ = {
+		4711AD7F1C7777A8006BF102 /* 🛠 SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "> SwiftGen";
+			name = "🛠 SwiftGen";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen images \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Images.swift\"\n  swiftgen strings \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Strings.swift\"\n  # swiftgen images \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Images.swift\"\n  # swiftgen storyboards \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Storyboards.swift\"\nelse\n  echo \"SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+			shellScript = "if which swiftgen >/dev/null; then\n  SOURCE_PATH=\"$PROJECT_DIR/$TARGET_NAME\"\n  swiftgen images \"$SOURCE_PATH\" --output \"$SOURCE_PATH/Constants/Images.swift\"\n  swiftgen strings \"$SOURCE_PATH/Base.lproj/Localizable.strings\" --output \"$SOURCE_PATH/Constants/Strings.swift\"\n  swiftgen colors \"$SOURCE_PATH/Constants/colors.xml\" --enumName AppColor --output \"$SOURCE_PATH/Constants/Colors.swift\"\n  # swiftgen storyboards \"$SOURCE_PATH\" --output \"$SOURCE_PATH/Constants/Storyboards.swift\"\nelse\n  echo \"SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
 			showEnvVarsInLog = 0;
 		};
 		5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */ = {

@@ -13,11 +13,11 @@ final class ImageCell: UITableViewCell, Reusable {
   @IBOutlet private weak var pictureView: UIImageView!
   @IBOutlet private weak var titleLabel: UILabel! {
     didSet {
-      titleLabel.textColor = AppColor.Blue.color
+      titleLabel.textColor = UIColor.AppColor.Blue.color
     }
   }
 
-  var asset: Asset? {
+  var asset: UIImage.Asset? {
     didSet {
       titleLabel.text = asset?.rawValue
       pictureView.image = asset.map { UIImage(asset: $0) }
