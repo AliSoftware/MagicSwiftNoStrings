@@ -166,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "iOSPerth" */;
 			buildPhases = (
+				097504281C7BAD6F00D1A01B /* ✍️ Speaker's Notes */,
 				4711AD7F1C7777A8006BF102 /* 🛠 SwiftGen */,
 				5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */,
 				09B15B721C70D1C100A1E31C /* Sources */,
@@ -233,6 +234,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		097504281C7BAD6F00D1A01B /* ✍️ Speaker's Notes */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "✍️ Speaker's Notes";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"$PROJECT_DIR\" -name '*.swift' -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"✍️.*$\" | sed -E \"s/(✍️) \\(([0-9]+)\\)/ warning: \\2. \\1/\" | sort -t: -k4 -n";
+			showEnvVarsInLog = 0;
+		};
 		153CCD1695DD20AA788C5746 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n  SOURCE_PATH=\"$PROJECT_DIR/$TARGET_NAME\"\n  swiftgen images \"$SOURCE_PATH\" --output \"$SOURCE_PATH/Constants/Images.swift\"\n  swiftgen strings \"$SOURCE_PATH/Base.lproj/Localizable.strings\" --output \"$SOURCE_PATH/Constants/Strings.swift\"\n  swiftgen colors \"$SOURCE_PATH/Constants/colors.xml\" --enumName AppColor --output \"$SOURCE_PATH/Constants/Colors.swift\"\n  # swiftgen storyboards \"$SOURCE_PATH\" --output \"$SOURCE_PATH/Constants/Storyboards.swift\"\nelse\n  echo \"SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+			shellScript = "if which swiftgen >/dev/null; then\n  echo \"warning: 🛠 SwiftGen disabled. Enable it at the end of the demo\"\n  exit 0\n  SOURCE_PATH=\"$PROJECT_DIR/$TARGET_NAME\"\n  swiftgen images \"$SOURCE_PATH\" --output \"$SOURCE_PATH/Constants/Images.swift\"\n  swiftgen strings \"$SOURCE_PATH/Base.lproj/Localizable.strings\" --output \"$SOURCE_PATH/Constants/Strings.swift\"\n  swiftgen colors \"$SOURCE_PATH/Constants/colors.xml\" --enumName AppColor --output \"$SOURCE_PATH/Constants/Colors.swift\"\n  # swiftgen storyboards \"$SOURCE_PATH\" --output \"$SOURCE_PATH/Constants/Storyboards.swift\"\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
 			showEnvVarsInLog = 0;
 		};
 		5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */ = {

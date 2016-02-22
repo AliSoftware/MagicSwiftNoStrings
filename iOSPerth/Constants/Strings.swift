@@ -2,6 +2,7 @@
 
 import Foundation
 
+// ✍️ (8) Enums with associated values can also be handy to expect parameters associated with the constant
 enum L10n {
   /// iOS Perth Meetup Demo
   case AppTitle
@@ -16,6 +17,7 @@ enum L10n {
 extension L10n: CustomStringConvertible {
   var description: String { return self.string }
 
+  // ✍️ (9) Enums with associated values wan't have a rawValue too, so we have to switch
   var string: String {
     switch self {
       case .AppTitle:
@@ -29,6 +31,7 @@ extension L10n: CustomStringConvertible {
     }
   }
 
+  // ✍️ (10) Little helper to call NSLocalizedString then use it as format when arguments are present
   private static func tr(key: String, _ args: CVarArgType...) -> String {
     let format = NSLocalizedString(key, comment: "")
     return String(format: format, locale: NSLocale.currentLocale(), arguments: args)
@@ -38,3 +41,9 @@ extension L10n: CustomStringConvertible {
 func tr(key: L10n) -> String {
   return key.string
 }
+
+// ✍️ (11) All this allows multiple variants at the call site
+// let title = tr(.AppTitle)
+// let hello = tr(.Greetings("You"))
+// let hi = L10n.Greetings("Perth").string
+// print(L10n.Greetings("Mate"))

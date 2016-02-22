@@ -12,9 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    // ✍️ (15) Create VC via the StoryboardScene Mixin
     window?.rootViewController = HomeViewController.instantiate()
     window?.makeKeyAndVisible()
 

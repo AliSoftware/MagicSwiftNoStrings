@@ -9,6 +9,8 @@
 import UIKit
 import Reusable
 
+// ✍️ (18) Reusable is also a Mixin (from the "Resuable" pod, see Pods.xcodeproj)
+// ✍️ (19) By making ImageCell conforms to Reusable, we can dequeue it easily
 final class ImageCell: UITableViewCell, Reusable {
   @IBOutlet private weak var pictureView: UIImageView!
   @IBOutlet private weak var titleLabel: UILabel! {
@@ -19,8 +21,11 @@ final class ImageCell: UITableViewCell, Reusable {
 
   var asset: UIImage.Asset? {
     didSet {
-      titleLabel.text = asset?.rawValue
-      pictureView.image = asset.map { UIImage(asset: $0) }
+      guard let asset = asset else { return }
+      titleLabel.text = asset.rawValue
+      // ✍️ (5) You can easily create an UIImage from an asset enum
+      pictureView.image = UIImage(asset: asset)
+//      pictureView.image = asset.image
     }
   }
 }

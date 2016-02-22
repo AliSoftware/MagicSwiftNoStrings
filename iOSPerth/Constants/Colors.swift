@@ -14,6 +14,7 @@ extension UIColor {
 }
 
 extension UIColor {
+  // ✍️ (6) Don't hesitate to use documentation comments to take advantage of Xcode's QuickHelp!
   enum AppColor {
     /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#3366cc"></span>
     /// Alpha: 100% <br/> (0x3366ccff)
@@ -28,6 +29,7 @@ extension UIColor {
     /// Alpha: 50% <br/> (0xffffff80)
     case Translucent
 
+    // ✍️ (7) If a rawValue can't fit (because risk of duplicates) we can still have a computed property
     var rgbaValue: UInt32! {
       switch self {
       case .Blue: return 0x3366ccff
