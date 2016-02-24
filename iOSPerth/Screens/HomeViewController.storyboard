@@ -22,9 +22,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yye-Jn-qBu">
                                 <rect key="frame" x="264" y="102" width="72" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                <state key="normal" title="👋"/>
+                                <state key="normal" title="🖼"/>
                                 <connections>
-                                    <action selector="waveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kke-Qh-0Bh"/>
+                                    <action selector="slideshowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAR-nT-UKG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACK-et-jey">
@@ -38,9 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-dv-opK">
                                 <rect key="frame" x="164" y="302" width="72" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                <state key="normal" title="🖼"/>
+                                <state key="normal" title="👋"/>
                                 <connections>
-                                    <action selector="slideshowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kkc-DT-Fjs"/>
+                                    <action selector="waveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZp-5g-Uu8"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -12,15 +12,15 @@ import UIKit
 //         so no need to provide any additional code for HomeViewController.instanciate() to work!
 final class HomeViewController: UIViewController, StoryboardBased {
 
-  @IBAction func waveAction(sender: UIButton) {
-    showAlert("iOS Perth")
-  }
-
   @IBAction func slideshowAction(sender: UIButton) {
     // ✍️ (16) ImagesListViewController also conforms to StoryboardBased, so we can create one using instanciate()
     let vc = ImagesListViewController.instantiate()
     let nc = UINavigationController(rootViewController: vc)
     self.presentViewController(nc, animated: true, completion: nil)
+  }
+
+  @IBAction func waveAction(sender: UIButton) {
+    showAlert("iOS Perth")
   }
 
   @IBAction func networkAction(sender: UIButton) {

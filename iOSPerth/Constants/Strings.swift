@@ -6,7 +6,7 @@ import Foundation
 enum L10n {
   /// iOS Perth Meetup Demo
   case AppTitle
-  /// Right-o
+  /// Thanks Mate
   case OK
   /// ❌
   case Close

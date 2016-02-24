@@ -13,9 +13,16 @@ import UIKit
 //        (unlike in ObjC, they don't have to be compile-time constants)
 
 struct AppFonts {
-  static let Title = UIFont.boldSystemFontOfSize(16)
-  static let Body = UIFont.systemFontOfSize(14)
-  static let Footnote = UIFont.italicSystemFontOfSize(10)
+  struct Gallery {
+    static let Caption = UIFont.italicSystemFontOfSize(14)
+    static let Author = UIFont.systemFontOfSize(12)
+  }
+
+  struct NewsArticle {
+    static let Title = UIFont.boldSystemFontOfSize(16)
+    static let Body = UIFont.systemFontOfSize(14)
+    static let Footnote = UIFont.italicSystemFontOfSize(10)
+  }
 }
 
 

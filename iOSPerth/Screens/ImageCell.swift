@@ -15,7 +15,8 @@ final class ImageCell: UITableViewCell, Reusable {
   @IBOutlet private weak var pictureView: UIImageView!
   @IBOutlet private weak var titleLabel: UILabel! {
     didSet {
-      titleLabel.textColor = UIColor.AppColor.Blue.color
+      titleLabel.textColor = UIColor.AppColor.Red.color
+      titleLabel.font = AppFonts.Gallery.Caption
     }
   }
 
