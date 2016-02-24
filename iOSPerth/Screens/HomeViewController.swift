@@ -39,8 +39,14 @@ final class HomeViewController: UIViewController, StoryboardBased {
   }
 
   private func showAlert(name: String) {
-    let alert = UIAlertController(title: String(L10n.AppTitle), message: L10n.Greetings(name).string, preferredStyle: .Alert)
-    alert.addAction(UIAlertAction(title: String(L10n.OK), style: .Cancel, handler: nil))
+    let alert = UIAlertController(
+      title: tr(.AppTitle),
+      message: L10n.Greetings(name).string,
+      preferredStyle: .Alert
+    )
+    alert.addAction(
+      UIAlertAction(title: String(L10n.OK), style: .Cancel, handler: nil)
+    )
     self.presentViewController(alert, animated: true, completion: nil)
   }
 }

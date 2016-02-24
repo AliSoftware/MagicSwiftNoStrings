@@ -9,7 +9,7 @@
 import UIKit
 import Reusable
 
-// ✍️ (18) Reusable is also a Mixin (from the "Resuable" pod, see Pods.xcodeproj)
+// ✍️ (18) Reusable is also a Mixin (from the "Reusable" pod, see Pods.xcodeproj)
 // ✍️ (19) By making ImageCell conforms to Reusable, we can dequeue it easily
 final class ImageCell: UITableViewCell, Reusable {
   @IBOutlet private weak var pictureView: UIImageView!
