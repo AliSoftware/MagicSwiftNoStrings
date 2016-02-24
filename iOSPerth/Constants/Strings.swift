@@ -43,7 +43,9 @@ func tr(key: L10n) -> String {
 }
 
 // ✍️ (11) All this allows multiple variants at the call site
-// let title = tr(.AppTitle)
-// let hello = tr(.Greetings("You"))
-// let hi = L10n.Greetings("Perth").string
-// print(L10n.Greetings("Mate"))
+//func test() {
+//  let hi = L10n.Greetings("Perth").string
+//  let title = tr(.AppTitle)
+//  let hello = tr(.Greetings("You"))
+//  print(L10n.Greetings("Mate"))
+//}
