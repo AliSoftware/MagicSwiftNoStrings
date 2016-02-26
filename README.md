@@ -2,7 +2,7 @@
 
 ## Context
 
-This project has been used as a demo during my iOS Perth Meetup talk in February 2016.
+This project has been used as a demo during some live coding talks (like iOS Perth Meetup talk in February 2016).
 
 ## Aim of this demo
 

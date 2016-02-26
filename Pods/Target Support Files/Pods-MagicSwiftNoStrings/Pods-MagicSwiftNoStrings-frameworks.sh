@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-iOSPerth/OHHTTPStubs.framework"
-  install_framework "Pods-iOSPerth/Reusable.framework"
+  install_framework "Pods-MagicSwiftNoStrings/OHHTTPStubs.framework"
+  install_framework "Pods-MagicSwiftNoStrings/Reusable.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-iOSPerth/OHHTTPStubs.framework"
-  install_framework "Pods-iOSPerth/Reusable.framework"
+  install_framework "Pods-MagicSwiftNoStrings/OHHTTPStubs.framework"
+  install_framework "Pods-MagicSwiftNoStrings/Reusable.framework"
 fi

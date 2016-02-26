@@ -1,6 +1,6 @@
 use_frameworks!
 
-target 'iOSPerth' do
+target 'MagicSwiftNoStrings' do
   pod 'OHHTTPStubs/Swift'
   pod 'Reusable'
 end

@@ -24,10 +24,12 @@
 		09B15B8F1C70DF5100A1E31C /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B8E1C70DF5100A1E31C /* Storyboards.swift */; };
 		09B15B911C70DF5D00A1E31C /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B901C70DF5D00A1E31C /* Routes.swift */; };
 		09B15B931C70DF6900A1E31C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B15B921C70DF6900A1E31C /* Strings.swift */; };
-		7FD9BE1DF8B16AA46370A0B3 /* Pods_iOSPerth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF356AEA3321E0CFA3E42456 /* Pods_iOSPerth.framework */; };
+		C144196BB668F1BBAB31884A /* Pods_MagicSwiftNoStrings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055CD3945A6F74EF45F64B95 /* Pods_MagicSwiftNoStrings.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04DD3D899486847C1A187A50 /* Pods-MagicSwiftNoStrings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicSwiftNoStrings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicSwiftNoStrings/Pods-MagicSwiftNoStrings.debug.xcconfig"; sourceTree = "<group>"; };
+		055CD3945A6F74EF45F64B95 /* Pods_MagicSwiftNoStrings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicSwiftNoStrings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		097504251C78E6C700D1A01B /* colors.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
 		09A116CC1C70F4FA00D5D7A2 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		09A116D31C70FC0900D5D7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 		09A116E31C71132B00D5D7A2 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		09A116E51C71150600D5D7A2 /* Stubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
 		09A116E71C728DBB00D5D7A2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		09B15B761C70D1C100A1E31C /* iOSPerth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPerth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B15B761C70D1C100A1E31C /* MagicSwiftNoStrings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicSwiftNoStrings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B15B791C70D1C100A1E31C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B15B7B1C70D1C100A1E31C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		09B15B801C70D1C100A1E31C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,9 +51,7 @@
 		09B15B8E1C70DF5100A1E31C /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		09B15B901C70DF5D00A1E31C /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		09B15B921C70DF6900A1E31C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		50A6B423B18C4D0F4FDCA1FC /* Pods-iOSPerth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPerth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth.debug.xcconfig"; sourceTree = "<group>"; };
-		BF356AEA3321E0CFA3E42456 /* Pods_iOSPerth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPerth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF0CA6728C0502B416A19220 /* Pods-iOSPerth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPerth.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth.release.xcconfig"; sourceTree = "<group>"; };
+		3985C21320EC021F5DFD8F6C /* Pods-MagicSwiftNoStrings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicSwiftNoStrings.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicSwiftNoStrings/Pods-MagicSwiftNoStrings.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD9BE1DF8B16AA46370A0B3 /* Pods_iOSPerth.framework in Frameworks */,
+				C144196BB668F1BBAB31884A /* Pods_MagicSwiftNoStrings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 		09B15B6D1C70D1C100A1E31C = {
 			isa = PBXGroup;
 			children = (
-				09B15B781C70D1C100A1E31C /* iOSPerth */,
+				09B15B781C70D1C100A1E31C /* MagicSwiftNoStrings */,
 				09B15B771C70D1C100A1E31C /* Products */,
 				16F04B119696BD0C9F4900DC /* Pods */,
 				941917C2EC6C4A78984B6050 /* Frameworks */,
@@ -102,12 +102,12 @@
 		09B15B771C70D1C100A1E31C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09B15B761C70D1C100A1E31C /* iOSPerth.app */,
+				09B15B761C70D1C100A1E31C /* MagicSwiftNoStrings.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		09B15B781C70D1C100A1E31C /* iOSPerth */ = {
+		09B15B781C70D1C100A1E31C /* MagicSwiftNoStrings */ = {
 			isa = PBXGroup;
 			children = (
 				09B15B791C70D1C100A1E31C /* AppDelegate.swift */,
@@ -117,7 +117,7 @@
 				09A116CF1C70FBED00D5D7A2 /* Resources */,
 				09A116E51C71150600D5D7A2 /* Stubs.swift */,
 			);
-			path = iOSPerth;
+			path = MagicSwiftNoStrings;
 			sourceTree = "<group>";
 		};
 		09B15B8B1C70DF2200A1E31C /* Constants */ = {
@@ -145,8 +145,8 @@
 		16F04B119696BD0C9F4900DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				50A6B423B18C4D0F4FDCA1FC /* Pods-iOSPerth.debug.xcconfig */,
-				FF0CA6728C0502B416A19220 /* Pods-iOSPerth.release.xcconfig */,
+				04DD3D899486847C1A187A50 /* Pods-MagicSwiftNoStrings.debug.xcconfig */,
+				3985C21320EC021F5DFD8F6C /* Pods-MagicSwiftNoStrings.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 		941917C2EC6C4A78984B6050 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF356AEA3321E0CFA3E42456 /* Pods_iOSPerth.framework */,
+				055CD3945A6F74EF45F64B95 /* Pods_MagicSwiftNoStrings.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,13 +162,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09B15B751C70D1C100A1E31C /* iOSPerth */ = {
+		09B15B751C70D1C100A1E31C /* MagicSwiftNoStrings */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "iOSPerth" */;
+			buildConfigurationList = 09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "MagicSwiftNoStrings" */;
 			buildPhases = (
+				5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */,
 				097504281C7BAD6F00D1A01B /* ✍️ Speaker's Notes */,
 				4711AD7F1C7777A8006BF102 /* 🛠 SwiftGen */,
-				5E2880DE257DC6F67C0A7A45 /* Check Pods Manifest.lock */,
 				09B15B721C70D1C100A1E31C /* Sources */,
 				09B15B731C70D1C100A1E31C /* Frameworks */,
 				09B15B741C70D1C100A1E31C /* Resources */,
@@ -179,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSPerth;
-			productName = iOSPerth;
-			productReference = 09B15B761C70D1C100A1E31C /* iOSPerth.app */;
+			name = MagicSwiftNoStrings;
+			productName = MagicSwiftNoStrings;
+			productReference = 09B15B761C70D1C100A1E31C /* MagicSwiftNoStrings.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 09B15B711C70D1C100A1E31C /* Build configuration list for PBXProject "iOSPerth" */;
+			buildConfigurationList = 09B15B711C70D1C100A1E31C /* Build configuration list for PBXProject "MagicSwiftNoStrings" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09B15B751C70D1C100A1E31C /* iOSPerth */,
+				09B15B751C70D1C100A1E31C /* MagicSwiftNoStrings */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicSwiftNoStrings/Pods-MagicSwiftNoStrings-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4711AD7F1C7777A8006BF102 /* 🛠 SwiftGen */ = {
@@ -306,7 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPerth/Pods-iOSPerth-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicSwiftNoStrings/Pods-MagicSwiftNoStrings-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -439,32 +439,32 @@
 		};
 		09B15B891C70D1C100A1E31C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50A6B423B18C4D0F4FDCA1FC /* Pods-iOSPerth.debug.xcconfig */;
+			baseConfigurationReference = 04DD3D899486847C1A187A50 /* Pods-MagicSwiftNoStrings.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = iOSPerth/Info.plist;
+				INFOPLIST_FILE = MagicSwiftNoStrings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alisoftware.iOSPerth;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alisoftware.MagicSwiftNoStrings;
+				PRODUCT_NAME = MagicSwiftNoStrings;
 			};
 			name = Debug;
 		};
 		09B15B8A1C70D1C100A1E31C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF0CA6728C0502B416A19220 /* Pods-iOSPerth.release.xcconfig */;
+			baseConfigurationReference = 3985C21320EC021F5DFD8F6C /* Pods-MagicSwiftNoStrings.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = iOSPerth/Info.plist;
+				INFOPLIST_FILE = MagicSwiftNoStrings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alisoftware.iOSPerth;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alisoftware.MagicSwiftNoStrings;
+				PRODUCT_NAME = MagicSwiftNoStrings;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09B15B711C70D1C100A1E31C /* Build configuration list for PBXProject "iOSPerth" */ = {
+		09B15B711C70D1C100A1E31C /* Build configuration list for PBXProject "MagicSwiftNoStrings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09B15B861C70D1C100A1E31C /* Debug */,
@@ -473,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "iOSPerth" */ = {
+		09B15B881C70D1C100A1E31C /* Build configuration list for PBXNativeTarget "MagicSwiftNoStrings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09B15B891C70D1C100A1E31C /* Debug */,

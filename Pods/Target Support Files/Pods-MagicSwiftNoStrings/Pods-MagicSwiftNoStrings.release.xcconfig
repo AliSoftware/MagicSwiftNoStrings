@@ -4,5 +4,5 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_pa
 OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/OHHTTPStubs.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Reusable.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "OHHTTPStubs" -framework "Reusable"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-iOSPerth
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MagicSwiftNoStrings
 PODS_ROOT = ${SRCROOT}/Pods
